@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const healthcheck = require('./healthcheck');
 
 app.get("/healthcheck", async(req,res) => {
         res.sendStatus(200);
